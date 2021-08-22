@@ -1,8 +1,9 @@
 #include "electricalcalc.h"
 #include "Electronics.h"
+#inculude "calculator.h"
 int main()
 {
-    printf("Choose your option \n 1.Electrical \n 2.Electronic \n");
+    printf("Choose your option \n 1.Electrical \n 2.Electronic \n 3.Arithmetic");
     int choice;
     scanf("%d", &choice);
     switch (choice)
@@ -13,7 +14,9 @@ int main()
      case 2:
         Electronicsfun();
         break;   
-
+     case 3;
+        mathcalc();
+        break;
     }
     return 0;
 }
